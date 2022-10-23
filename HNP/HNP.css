@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background-size: cover;
+}
+.btn{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    background: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+.btn.click{
+    left: 260px;
+}
+.btn span{
+    color: #2c2c2c;
+    font-size: 28px;
+    line-height: 45px;
+}
+.btn.click span:before{
+    content: '\f00d';
+}
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: #333332;
+    transition: left 0.4s ease;
+}
+.sidebar.show{
+    left: 0;
+}
+.sidebar .text{
+    color: White;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #0e0e0e;
+    letter-spacing: 3px;
+}
+nav ul{
+    background: #0e0e0e;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+nav ul li{
+    line-height: 90px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+nav ul li:last-child{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+nav ul li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding-left: 30px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    border-left: 5px solid transparent;
+}
+nav ul li.active a{
+    color: white;
+    background: #0e0e0e;
+    border-left-color: #f5dc98;
+}
+nav ul ul{
+    position: static;
+    display: none;
+}
+nav ul .quar-show.show{
+    display: block;
+}
+nav ul .quar-show.show{
+    display: block;
+}
+nav ul ul li{
+    line-height: 42px;
+    border-bottom: none;
+}
+nav ul ul li a{
+    font-size: 17px;
+    color: white;
+    padding-left: 80px;
+}
+nav ul li.active ul li a{
+    color: white;
+    background: #0e0e0e;
+    border-left-color: transparent;
+}
+nav ul ul li a:hover{
+    color: #0e0e0e!important;
+    background: #f5dc98!important;
+}
+nav ul li a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s
+}
+nav ul li a span.rotate{
+    transform: translateY(-50%) rotate(-180deg);
+}
+#preloader{
+    background: #000 url('https://i.pinimg.com/originals/b8/71/76/b8717641f46cdfdced2c86e984f07c11.gif') no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.fwh-slide{
+    height: 100vh;
+    background-image:url(HNP.png);
+    background-size: cover;
+    box-sizing: border-box;
+}
+.fwh-slide--cont1{
+    height: 100vh;
+    background: #0e0e0e;
+    color: white;
+}
+.fwh-slide--cont2{
+    height: 100vh;
+    background-image:url(Quarter%201.png);
+    background-size: cover;
+    box-sizing: border-box;
+}
+.fwh-slide--cont3{
+    height: 100vh;
+    background-image:url(Quarter%202.png);
+    background-size: cover;
+    box-sizing: border-box;
+}
+.fwh-slide--cont4{
+    height: 100vh;
+    background-image:url(Quarter%203.png);
+    background-size: cover;
+    box-sizing: border-box;
+}
+.fwh-slide--cont5{
+    height: 100vh;
+    background-image:url(Quarter%204.png);
+    background-size: cover;
+    box-sizing: border-box;
+}
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #f5dc98;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #0e0e0e;
+    font-size: 22px;
+}
+.container{
+    width: 90%;
+    margin: 50px auto;
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-flow: wrap;
+}
+.card{
+    width: 19%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+.card-header{
+    text-align: center;
+    padding: 45px 10px;
+    background: #f5dc98;
+    color: black;
+}
+.card-body{
+    padding: 70px 20px;
+    font-size: 18px;
+    color: #000;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0,0,0,0.25);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>HNP</title>
+    <link rel="shortcut icon" type="image/png" href="Favicon.png">
+<link rel="shortcut icon" type="image/png" href="#">
+<link rel="stylesheet" href="HNP.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        
+        <div id="preloader"></div>
+        
+        <div class="btn">
+        <span class="fas fa-bars"></span>
+        </div>
+        <nav class="sidebar">
+        <div class="text">Menu</div>
+            <ul>
+                <li>
+                    <li><a href="HNP.html">Home</a></li>
+                <li>
+                <a href="#" class="quar-btn">Quarters <span class="fas fa-caret-down first"></span></a>
+                    <ul class="quar-show">
+                    <li><a href="HNP-Q1.html">Quarter 1</a></li>
+                    <li><a href="HNP-Q2.html">Quarter 2</a></li>
+                    <li><a href="HNP-Q3.html">Quarter 3</a></li>
+                    <li><a href="HNP-Q4.html">Quarter 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hE0H415VzL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/hE0H415VzL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/hE0H415VzL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/hE0H415VzL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/hE0H415VzL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </nav>
+        <section class="fwh-slide--cont3">
+        </section>
+        <section class="fwh-slide--cont1">
+            <h1 style="text-align-last: center;font-size: 150px;"><br>COMING SOON</h1>
+        </section>
+        
+        <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i></a>
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function(){
+                loader.style.display = "none";
+            })
+        $('.btn').click(function(){
+           $(this).toggleClass("click") 
+           $('.sidebar').toggleClass("show") 
+        });
+        $('.quar-btn').click(function(){
+            $('nav ul .quar-show').toggleClass("show")
+            $('nav ul .first').toggleClass("rotate")
+        });
+        $('nav ul li').click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+        </script>
+    </body>
+</html>
